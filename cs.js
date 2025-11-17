@@ -23,4 +23,6 @@ function computeGrade(grade){
     console.log("Not within the transmutation");
   }
 }
+computeGrade(85);
+
 
