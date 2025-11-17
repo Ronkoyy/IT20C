@@ -7,3 +7,8 @@ function legalAge(age) {
 }
 
 legalAge(50);
+
+function computeGrade(grade){
+    
+}
+
