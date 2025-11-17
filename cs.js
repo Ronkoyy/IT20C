@@ -25,4 +25,7 @@ function computeGrade(grade){
 }
 computeGrade(85);
 
+function login(username, password) {
+    
+}
 
