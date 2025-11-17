@@ -26,6 +26,16 @@ function computeGrade(grade){
 computeGrade(85);
 
 function login(username, password) {
-    
+    if (username === "Ron") {
+
+    if (password === 0000) {
+      console.log("Welcome User");
+    } else {
+      console.log("Invalid Login Credentials");
+    }
+  } else {
+    console.log("Invalid User");
+  }
 }
+login("Ron", 0000);
 
