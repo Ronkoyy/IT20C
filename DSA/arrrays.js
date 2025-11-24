@@ -38,12 +38,33 @@ class Array{
     }
     console.log(element + " is not found");
     return -1;
-}
+    }
 
-}
+   update(index, element){
+    if(index < 0 || index >= this.length){
+        console.log("Index out of bounds");
+        return;
+    }
+    this.data[index] = element;
+    }
+    delete(index){
+    if(index < 0 || index >= this.length){
+        console.log("Invalid index");
+        return;
+    }
+    //shiftoing condition
+    for(let i = index; i < this.length - 1; i++){
+        this.data[i] = this.data[i + 1];
+    }
+    delete this.data[this.length - 1];
+    this.length--;
+    }
+}   
 
-arr = new Array([4,2,3]);
-arr.insert(0,50);
+let arr = new Array([4,2,3]);
+
 arr.traverse();
-arr.search(50)
-arr.search(100);
+arr.update(1,50);
+arr.traverse();
+arr.delete(0);
+arr.traverse();
