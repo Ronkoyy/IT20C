@@ -28,7 +28,7 @@ computeGrade(85);
 function login(username, password) {
     if (username === "Ron") {
 
-    if (password === 0000) {
+    if (password === 1234) {
       console.log("Welcome User");
     } else {
       console.log("Invalid Login Credentials");
@@ -37,5 +37,4 @@ function login(username, password) {
     console.log("Invalid User");
   }
 }
-login("Ron", 0000);
-
+login("Ron", 1234);
