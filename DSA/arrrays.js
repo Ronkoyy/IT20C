@@ -17,7 +17,20 @@ class Array{
         }
         console.log(output);
     }
+    insert(index, data){
+        if(index < 0 || index > this.length){
+            console.log("Index out of bounds");
+            return;
+        }
+        //shifting condition
+        for(let i = this.length; i > index; i--){
+            this.data[i] = this.data[i-1];
+        }
+        this.data[index] = data;
+        this.length++;
+    }
 }
 
 arr = new Array([4,2,3]);
+arr.insert(3,50);
 arr.traverse();
